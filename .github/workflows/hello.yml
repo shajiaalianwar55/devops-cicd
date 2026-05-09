@@ -1,0 +1,16 @@
+name: Hello Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print my details
+        run: |
+          echo "Name: Shajia Ali Anwar"
+          echo "Student ID: 2024579"
