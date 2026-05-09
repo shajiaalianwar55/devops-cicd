@@ -30,7 +30,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build Docker image
+      - name: Build Docker image again
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/devops-cicd:latest .
 
       - name: Push Docker image
